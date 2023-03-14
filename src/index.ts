@@ -1,4 +1,4 @@
-import { Middleware } from 'koa'
+import { Middleware } from 'https://deno.land/x/oak@v12.1.0/mod.ts'
 import validatePolicy from './validate-policy'
 import formatPolicy from './format-policy'
 import { Policy } from './interface/policy'

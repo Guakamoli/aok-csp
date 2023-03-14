@@ -3,7 +3,7 @@
   <img src="./doc/images/logo.svg?sanitize=true" width="120" alt="logo" />
 </p>
 
-<h1 align="center" style="text-align: center">KOA-CSP</h1>
+<h1 align="center" style="text-align: center">DENO-KOA-CSP</h1>
 <!-- title -->
 
 [![version](https://img.shields.io/npm/v/koa-csp.svg?style=flat-square)](https://www.npmjs.com/package/koa-csp)
@@ -15,7 +15,7 @@
 
 
 <!-- description -->
-This is a koa2 middleware used to set response header `Content-Security-Policy`.
+This is a deno koa2 middleware used to set response header `Content-Security-Policy`.
 
 [What is CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 <!-- description -->
