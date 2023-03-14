@@ -1,7 +1,7 @@
 import { Middleware } from 'https://deno.land/x/oak@v12.1.0/mod.ts'
-import validatePolicy from './validate-policy'
-import formatPolicy from './format-policy'
-import { Policy } from './interface/policy'
+import validatePolicy from './validate-policy.ts'
+import formatPolicy from './format-policy.ts'
+import { Policy } from './interface/policy.ts'
 
 
 // default config
@@ -46,7 +46,7 @@ export default function({ enableWarn = defaultParams.enableWarn, policy = defaul
       .map(directive => directive.join(' '))
       .join(';')
 
-    ctx.set('Content-Security-Policy', policyStr)
+    ctx.response.headers.set('Content-Security-Policy', policyStr)
     return next()
   }
 }
